@@ -11,7 +11,7 @@ import { TextareaInput } from './variants/TextareaInput'
 import { TextInput } from './variants/TextInput'
 
 export function MInput(props: InputProps) {
-  switch (props.variant) {
+  switch (props.$variant) {
     case 'default':
       return <TextInput {...props} />
 
