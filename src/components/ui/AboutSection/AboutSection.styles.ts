@@ -3,20 +3,27 @@ import { media, pastelTheme, theme } from '@/styles/theme'
 import { styled } from 'styled-components'
 
 export const AboutContainer = styled.div`
+  width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+`
+
+export const AboutContent = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: ${theme.grid.autoFit};
-  justify-content: center;
+  align-items: center;
+  grid-template-columns: ${theme.grid.two};
   gap: ${theme.spacing.lg};
 
-  padding: ${theme.spacing.lg} 0;
+  ${media.tablet} {
+    grid-template-columns: ${theme.grid.one};
+  }
 `
 
 export const AboutCard = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  width: 400px;
+  height: 500px;
 
   border-radius: ${theme.radius.md};
   overflow: hidden;
@@ -38,108 +45,24 @@ export const AboutCard = styled.div`
     img {
       transform: scale(1.08);
     }
+  }
 
-    h4 {
-      color: ${pastelTheme.colors.pastelRed.base};
-    }
+  ${media.tablet} {
+    width: 100%;
+    height: 400px;
   }
 `
 
-export const AboutCardHeader = styled.div`
+export const AboutCardContent = styled.div`
   position: relative;
   width: 100%;
-  height: 190px;
-  overflow: hidden;
+  height: 100%;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     ${transitions.slow}
-  }
-`
-
-export const AboutCardBody = styled.div`
-  width: 100%;
-  padding: ${theme.spacing.md};
-
-  display: flex;
-  flex-direction: column;
-  gap: ${theme.spacing.md};
-
-  h4 {
-    font-size: ${theme.fontSize.lg};
-    font-weight: 600;
-    color: ${pastelTheme.colors.pastelPurple.base};
-    text-align: left;
-    ${transitions.fast}
-  }
-`
-
-export const TagDiv = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: ${theme.spacing.sm};
-
-  span {
-    display: flex;
-    align-items: center;
-    gap: ${theme.spacing.sm};
-
-    padding: ${theme.spacing.xs} ${theme.spacing.sm};
-
-    border-radius: 999px;
-    font-size: ${theme.fontSize.sm};
-    font-weight: 500;
-
-    width: fit-content;
-
-    ${transitions.fast}
-
-    svg {
-      font-size: ${theme.fontSize.xl};
-    }
-
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
-  .span-green {
-    border: 2px solid ${pastelTheme.colors.pastelGreen.dark};
-    color: ${pastelTheme.colors.pastelGreen.dark};
-    background-color: ${pastelTheme.colors.pastelGreen.soft};
-  }
-
-  .span-red {
-    border: 2px solid ${pastelTheme.colors.pastelRed.dark};
-    color: ${pastelTheme.colors.pastelRed.dark};
-    background-color: ${pastelTheme.colors.pastelRed.soft};
-  }
-
-  .span-yellow {
-    border: 2px solid ${pastelTheme.colors.pastelYellow.dark};
-    color: ${pastelTheme.colors.pastelYellow.dark};
-    background-color: ${pastelTheme.colors.pastelYellow.soft};
-  }
-
-  .span-blue {
-    border: 2px solid ${pastelTheme.colors.pastelBlue.dark};
-    color: ${pastelTheme.colors.pastelBlue.dark};
-    background-color: ${pastelTheme.colors.pastelBlue.soft};
-  }
-
-  ${media.tablet} {
-    align-items: center;
-
-    h4 {
-      text-align: center;
-    }
-
-    div {
-      align-items: center;
-    }
   }
 `
 

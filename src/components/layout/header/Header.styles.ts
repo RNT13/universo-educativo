@@ -22,8 +22,11 @@ export const ButtonDiv = styled.div`
   display: flex;
 
   ${media.tablet} {
-    font-size: ${theme.fontSize.sm};
-    gap: ${theme.spacing.sm};
+    button {
+      font-size: ${theme.fontSize.sm};
+      gap: ${theme.spacing.sm};
+      padding: ${theme.spacing.xs} ${theme.spacing.sm};
+    }
   }
 `
 

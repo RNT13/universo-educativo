@@ -18,8 +18,8 @@ export default function Home() {
         <Hero />
         <FeaturesSection />
         <SolutionSection />
-        <AboutSection />
         <ExampleSection />
+        <AboutSection />
         <TestimonySection />
         <RecoverySection />
         <FinalSection />

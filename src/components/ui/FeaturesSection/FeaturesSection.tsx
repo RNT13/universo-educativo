@@ -1,4 +1,4 @@
-import { MinorTextH4, TitleH2 } from "@/styles/globalStyles";
+import { TitleH2, TitleH3 } from "@/styles/globalStyles";
 import { MAnimation } from "@/styles/MAnimations";
 import { FaCheck, FaRegClock, FaRegStar } from "react-icons/fa";
 import { FiBookOpen } from "react-icons/fi";
@@ -24,9 +24,9 @@ export default function FeaturesSection() {
               <FiBookOpen />
             </div>
             <TitleH2>100% Alinhado à BNCC</TitleH2>
-            <MinorTextH4>
-              Códigos de habilidades em todas as atividades. Atenda às exigências da coordenação.
-            </MinorTextH4>
+            <TitleH3>
+              Códigos de habilidades em todos os planejamentos. Atenda às exigências da coordenação.
+            </TitleH3>
           </FeatureCard>
         </MAnimation>
 
@@ -36,9 +36,9 @@ export default function FeaturesSection() {
               <FaRegClock />
             </div>
             <TitleH2>Economize 10h por semana</TitleH2>
-            <MinorTextH4>
+            <TitleH3>
               Planejamentos prontos. Chega de passar noites e fins de semana preparando aula.
-            </MinorTextH4>
+            </TitleH3>
           </FeatureCard>
         </MAnimation>
 
@@ -48,9 +48,9 @@ export default function FeaturesSection() {
               <FaRegStar />
             </div>
             <TitleH2>Atividades Testadas por Professores</TitleH2>
-            <MinorTextH4>
+            <TitleH3>
               Material desenvolvido por professores com anos de experiência em sala de aula.
-            </MinorTextH4>
+            </TitleH3>
           </FeatureCard>
         </MAnimation>
 
@@ -60,9 +60,9 @@ export default function FeaturesSection() {
               <FaCheck />
             </div>
             <TitleH2>Pronto para Usar Amanhã</TitleH2>
-            <MinorTextH4>
+            <TitleH3>
               PDF de alta qualidade para imprimir. Atividades em alta resolução.
-            </MinorTextH4>
+            </TitleH3>
           </FeatureCard>
         </MAnimation>
 

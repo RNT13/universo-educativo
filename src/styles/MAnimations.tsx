@@ -14,6 +14,23 @@ const spin = keyframes`
   to { transform: rotate(360deg); }
 `;
 
+const pulseGlow = keyframes`
+  0% {
+    transform: scale(0.95);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scale(1.12);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(0.95);
+    opacity: 0.4;
+  }
+`
+
 const rocketTrajectory = keyframes`
   /* Surge do canto inferior esquerdo */
   0% {
@@ -202,10 +219,22 @@ const shimmer = keyframes`
   100% { transform: translateX(100%); }
 `;
 
-const glowDiagonal = keyframes`
-  0% { transform: translate(-150%, -150%) rotate(45deg); opacity: 0; }
-  30%,70% { opacity: 1; }
-  100% { transform: translate(150%,150%) rotate(45deg); opacity: 0; }
+const glowDiagonalLoop = keyframes`
+  0% {
+    transform: translate(-120%, -120%) rotate(45deg) scale(0.9);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(40%, 40%) rotate(45deg) scale(2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(120%, 120%) rotate(45deg) scale(0.9);
+    opacity: 0;
+  }
 `;
 
 const shineLoop = keyframes`
@@ -725,27 +754,99 @@ export const continuousAnimations = {
         rgba(255,255,255,0.6),
         transparent 70%
       );
-      animation: ${glowDiagonal} 1.2s ease-out forwards;
+      animation: ${glowDiagonalLoop} 1.2s ease-out forwards;
     }
   `,
 
-  InfinityGlow: css`
+  InfinityGlowDiagonal: css`
     ${overlayBase}
+
     &::before {
       content: '';
       position: absolute;
-      inset: -50%;
-      width: 200%;
-      height: 200%;
+      top: -60%;
+      left: -60%;
+      width: 220%;
+      height: 220%;
+      border-radius: inherit;
+
       background: linear-gradient(
         120deg,
         transparent 30%,
-        rgba(255,255,255,0.6),
+        rgba(200, 200, 200, 0.25) 40%,
+        rgba(255, 255, 255, 0.9) 48%,
+        #f5f5f5 50%,
+        rgba(255, 255, 255, 0.9) 52%,
+        rgba(200, 200, 200, 0.25) 60%,
         transparent 70%
       );
-      animation: ${glowDiagonal} 3s ease-out infinite;
+
+      filter: blur(16px);
+      mix-blend-mode: screen;
+
+      animation: ${glowDiagonalLoop} 4s ease-in-out infinite;
     }
   `,
+
+  InfinityGlowGold: css`
+    ${overlayBase}
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -60%;
+      left: -60%;
+      width: 220%;
+      height: 220%;
+      border-radius: inherit;
+
+      background: linear-gradient(
+        120deg,
+        transparent 30%,
+        rgba(255, 215, 0, 0.25) 40%,
+        rgba(255, 215, 0, 0.9) 48%,
+        #ffffff 50%,
+        rgba(255, 215, 0, 0.9)52%,
+        rgba(255, 215, 0, 0.25) 60%,
+        transparent 70%
+      );
+
+      filter: blur(16px);
+      mix-blend-mode: screen;
+
+      animation: ${glowDiagonalLoop} 4s ease-in-out infinite;
+    }
+`,
+
+  InfinityGlowPurple: css`
+    ${overlayBase}
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -60%;
+      left: -60%;
+      width: 220%;
+      height: 220%;
+      border-radius: inherit;
+
+      background: linear-gradient(
+        120deg,
+        transparent 30%,
+        rgba(170, 0, 255, 0.25) 40%,
+        rgba(170, 0, 255, 0.9) 48%,
+        #ffffff 50%,
+        rgba(170, 0, 255, 0.9) 52%,
+        rgba(170, 0, 255, 0.25) 60%,
+        transparent 70%
+      );
+
+      filter: blur(16px);
+      mix-blend-mode: screen;
+
+      animation: ${glowDiagonalLoop} 4s ease-in-out infinite;
+    }
+`,
 
   shineInfinite: css`
     ${overlayBase}
@@ -874,6 +975,25 @@ export const continuousAnimations = {
   lightningStrikeLoop: css`
     animation: ${lightningStrikeMove} 5s ease-in-out infinite;
   `,
+
+  backGlow: css`
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: inherit;
+
+      background: rgba(0, 200, 255, 0.6);
+      filter: blur(18px);
+
+      z-index: -1;
+
+      animation: ${pulseGlow} 2.4s ease-in-out infinite;
+    }
+`
 };
 
 /* ======================================================

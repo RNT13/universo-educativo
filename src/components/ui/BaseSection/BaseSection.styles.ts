@@ -24,7 +24,7 @@ export const BaseSectionContainer = styled.div<BaseSectionProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px 0px;
+  padding: ${theme.spacing.lg} 0;
 
   ${({ $bgType = 'solid', $bgVariant, $bgVariant2 }) => {
     if ($bgType === 'gradient') {
@@ -48,7 +48,7 @@ export const BaseSectionContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: ${theme.spacing.md};
+  gap: ${theme.spacing.lg};
 
   h2 {
     font-size: ${theme.fontSize['2xl']};
@@ -57,14 +57,18 @@ export const BaseSectionContent = styled.div`
     color: ${pastelTheme.colors.pastelPurple.dark};
 
     span {
-      font-size: ${theme.fontSize.xl};
+      font-size: ${theme.fontSize['3xl']};
       font-weight: 600;
       color: ${pastelTheme.colors.pastelRed.base};
     }
 
     ${media.tablet} {
-      font-size: ${theme.fontSize.lg};
+      font-size: ${theme.fontSize.xl};
       text-align: center;
+
+      span {
+        font-size: ${theme.fontSize['2xl']};
+      }
     }
   }
 

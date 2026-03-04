@@ -6,21 +6,11 @@ import { styled } from 'styled-components'
 export const SolutionContainer = styled.div`
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: ${theme.grid.two};
   gap: ${theme.spacing.md};
 
   ${media.tablet} {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: ${theme.spacing.md};
-    justify-items: center;
-  }
-
-  ${media.mobile} {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: ${theme.spacing.md};
-    justify-items: center;
+    grid-template-columns: ${theme.grid.one};
   }
 `
 
@@ -32,7 +22,7 @@ export const SolutionCard = styled.div<SectionVariantsProps>`
   align-items: start;
   gap: ${theme.spacing.md};
   border-radius: ${theme.radius.md};
-  padding: ${theme.spacing.sm};
+  padding: ${theme.spacing.md};
   background-color: ${pastelTheme.colors.pastelYellow.soft};
   box-shadow: -10px 0px 0 0px ${props => sectionColors[props.$variant].border};
   border: 2px solid ${props => sectionColors[props.$variant].border};
@@ -88,37 +78,37 @@ export const SolutionCardIcon = styled.div<SectionVariantsProps>`
   ${transitions.default}
 
   svg {
-    font-size: 48px;
-    width: 30px;
-    height: 30px;
+    font-size: ${theme.fontSize['2xl']};
     color: ${props => sectionColors[props.$variant].bg};
     ${transitions.default}
   }
 `
 
 export const Moon = styled.div`
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 4rem;
+  opacity: 0.1;
+  z-index: 1;
+  ${continuousAnimations.float};
+
   &::before {
     content: '🌙';
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 4rem;
-    opacity: 0.1;
-    z-index: 1;
-    ${continuousAnimations.float};
   }
 `
 
 export const Pen = styled.div`
+  position: absolute;
+  bottom: -40px;
+  left: 5%;
+  font-size: 4rem;
+  opacity: 0.1;
+  z-index: 1;
+  ${continuousAnimations.float};
+
   &::before {
     content: '🖊️';
-    position: absolute;
-    bottom: -40px;
-    left: 5%;
-    font-size: 4rem;
-    opacity: 0.1;
-    z-index: 1;
-    ${continuousAnimations.float};
   }
 `
 
@@ -128,11 +118,15 @@ export const SolutionDisclaimer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 12px;
-  border-radius: 16px;
-  padding: 12px;
+  gap: ${theme.spacing.sm};
+  border-radius: ${theme.radius.md};
+  padding: ${theme.spacing.md};
   background-image: linear-gradient(180deg, ${pastelTheme.colors.pastelGreen.soft}, ${pastelTheme.colors.pastelGreen.base});
   border: 2px solid ${pastelTheme.colors.pastelGreen.base};
+
+  h3 {
+    color: ${pastelTheme.colors.pastelBlue.dark};
+  }
 
   svg {
     font-size: 84px;

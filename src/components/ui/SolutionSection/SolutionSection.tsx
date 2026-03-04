@@ -1,4 +1,4 @@
-import { MinorTextH4, TitleH2 } from "@/styles/globalStyles";
+import { MinorTextH4, TitleH2, TitleH3 } from "@/styles/globalStyles";
 import { MAnimation } from "@/styles/MAnimations";
 import { BsTrophy } from "react-icons/bs";
 import { FaHeadphonesAlt } from "react-icons/fa";
@@ -83,11 +83,11 @@ export default function SolutionSection() {
 
           <TitleH2 >A solução está <span>aqui</span>!</TitleH2>
 
-          <MinorTextH4>
+          <TitleH3>
             Com nosso material completo, você economiza mais de <strong>10 horas de planejamento por semana</strong>.
             São atividades prontas, organizadas e alinhadas à BNCC, com planejamentos estruturados para alunos de 4 à 10 anos.
             Você mantém um padrão de qualidade nas suas aulas, ganha segurança no que está aplicando e ainda recupera tempo para ser mais criativo, preparar experiências incríveis e ensinar com leveza e paixão.
-          </MinorTextH4>
+          </TitleH3>
 
         </SolutionDisclaimer>
       </MAnimation>

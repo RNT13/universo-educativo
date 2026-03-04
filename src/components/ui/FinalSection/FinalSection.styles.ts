@@ -58,7 +58,7 @@ export const ThunterSection = styled.div`
   background-color: ${pastelTheme.colors.pastelBlue.dark};
   border-radius: ${theme.radius.lg};
   padding: ${theme.spacing.sm} ${theme.spacing.lg};
-  ${continuousAnimations.InfinityGlow}
+  ${continuousAnimations.InfinityGlowDiagonal}
 
   svg {
     width: 50px;
@@ -74,6 +74,10 @@ export const ThunterSection = styled.div`
 
   h3 {
     color: ${theme.colors.baseYellow.base};
+  }
+
+  ${media.tablet} {
+    padding: ${theme.spacing.sm};
   }
 `
 
@@ -163,9 +167,7 @@ export const Book = styled.div`
 
   ${media.tablet} {
     &::before {
-      top: -150px;
-      right: -20px;
-      font-size: 8rem;
+      font-size: 7rem;
     }
   }
 `

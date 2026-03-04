@@ -25,9 +25,9 @@ export const FeatureCard = styled.div<SectionVariantsProps>`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  gap: ${theme.spacing.md};
+  gap: ${theme.spacing.sm};
   border-radius: ${theme.radius.md};
-  padding: ${theme.spacing.sm};
+  padding: ${theme.spacing.md};
 
   background-color: ${props => sectionColors[props.$variant].bg};
   border: 2px solid ${props => sectionColors[props.$variant].border};
@@ -46,13 +46,13 @@ export const FeatureCard = styled.div<SectionVariantsProps>`
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: ${theme.fontSize.lg};
     font-weight: 600;
     color: ${props => sectionColors[props.$variant].icon};
   }
 
-  h4 {
-    font-size: 0.9rem;
+  h3 {
+    font-size: ${theme.fontSize.md};
     font-weight: 500;
     color: ${props => sectionColors[props.$variant].icon};
   }

@@ -10,9 +10,9 @@ export default function ExampleSection() {
     <BaseSection
       bgType="solid"
       bgColor="pastelYellow"
-      title1="Veja exemplos"
-      titleHighlight="reais"
-      title2="do nosso material!"
+      title1="O que você vai"
+      titleHighlight="encontrar:"
+      title2=""
       subTitle="Atividades prontas, organizadas e testadas em sala de aula. É só imprimir e aplicar."
     >
       <ExampleContainer>

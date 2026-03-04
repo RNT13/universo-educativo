@@ -176,6 +176,7 @@ export const TitleH2 = styled.h2`
 export const TitleH3 = styled.h3`
   font-size: ${theme.fontSize.lg};
   font-weight: 600;
+  text-align: justify;
   color: ${pastelTheme.colors.pastelBlue.base};
   ${transitions.default};
 `
@@ -188,7 +189,6 @@ export const MinorTextH4 = styled.h4`
 `
 
 export const GradientTextH2 = styled.h2`
-  font-weight: 600;
   color: ${theme.colors.baseBlue.base};
   font-size: 2rem;
   font-weight: 700;

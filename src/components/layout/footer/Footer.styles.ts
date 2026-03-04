@@ -29,6 +29,7 @@ export const FooterContent = styled.div`
 
   h3 {
     color: ${pastelTheme.colors.pastelBlue.soft};
+    text-align: center;
   }
 `
 

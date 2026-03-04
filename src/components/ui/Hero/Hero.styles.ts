@@ -14,8 +14,8 @@ export const HeroContent = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  padding: 24px 0px;
-  gap: 24px;
+  padding: ${theme.spacing.lg} ${theme.spacing.xs};
+  gap: ${theme.spacing.lg};
   z-index: 1;
 
   ${media.tablet} {
@@ -70,7 +70,7 @@ export const HeroInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 24px;
+  gap: ${theme.spacing.lg};
 
   ${media.tablet} {
     width: 90%;
@@ -118,15 +118,15 @@ export const HeroTitle = styled.h2`
   }
 `
 
-export const HeroDescription = styled.h3`
-  font-weight: 600;
-  font-size: ${theme.fontSize.lg};
-  color: ${theme.colors.baseBlack.dark04};
-  text-align: left;
+export const HeroDescription = styled.div`
+  h3 {
+    font-weight: 600;
+    font-size: ${theme.fontSize.lg};
+    color: ${theme.colors.baseBlack.dark04};
 
-  ${media.tablet} {
-    font-size: ${theme.fontSize.md};
-    text-align: center;
+    ${media.tablet} {
+      font-size: ${theme.fontSize.md};
+    }
   }
 `
 
@@ -153,16 +153,16 @@ export const HeroDisclaimer = styled.div`
     width: fit-content;
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 1rem;
+    gap: ${theme.spacing.xs};
+    font-size: ${theme.fontSize.md};
     color: ${pastelTheme.colors.pastelGreen.dark};
     background-color: ${pastelTheme.colors.pastelGreen.soft};
-    padding: 4px 12px;
-    border-radius: 24px;
+    padding: ${theme.spacing.xs} ${theme.spacing.md};
+    border-radius: ${theme.radius.lg};
     border: 2px solid ${pastelTheme.colors.pastelGreen.dark};
 
     svg {
-      font-size: 24px;
+      font-size: ${theme.fontSize.xl};
     }
   }
 

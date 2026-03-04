@@ -25,9 +25,9 @@ export const ExampleCard = styled.div<SectionVariantsProps>`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
-  border-radius: 16px;
-  padding: 24px;
+  gap: ${theme.spacing.lg};
+  border-radius: ${theme.radius.md};
+  padding: ${theme.spacing.md};
   background-color: ${props => sectionColors[props.$variant].bg};
 
   &:hover {
@@ -66,7 +66,7 @@ export const ExampleCardImg = styled.div<SectionVariantsProps>`
   img {
     border: 2px solid ${props => sectionColors[props.$variant].border};
     box-shadow: 10px 10px 0px 0px ${props => sectionColors[props.$variant].border};
-    border-radius: 16px;
+    border-radius: ${theme.radius.md};
     width: 100%;
     height: 100%;
     ${transitions.default};
@@ -82,7 +82,7 @@ export const ExampleCardBody = styled.div<SectionVariantsProps>`
   gap: ${theme.spacing.md};
 
   h2 {
-    font-size: 2rem;
+    font-size: ${theme.fontSize.xl};
     font-weight: 600;
     color: ${props => sectionColors[props.$variant].icon};
   }

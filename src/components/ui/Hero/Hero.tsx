@@ -1,6 +1,6 @@
 'use client'
 
-import { BlueButton, RedButton } from "@/styles/globalStyles";
+import { BlueButton, RedButton, TitleH3 } from "@/styles/globalStyles";
 import { MAnimation } from "@/styles/MAnimations";
 import { GoCheckCircleFill } from "react-icons/go";
 import { WiStars } from "react-icons/wi";
@@ -35,15 +35,17 @@ export default function Hero() {
 
           <MAnimation type="reveal" animation="fadeInUp">
             <HeroDescription>
-              Apostilas completas, atividades lúdicas e planejamentos alinhados à BNCC para a Educação Infantil e o Ensino Fundamental I. Economize tempo e encante seus alunos.
+              <TitleH3>
+                Apostilas completas, atividades lúdicas e planejamentos alinhados à BNCC para a Educação Infantil e o Ensino Fundamental I. Economize tempo e encante seus alunos.
+              </TitleH3>
             </HeroDescription>
           </MAnimation>
 
           <MAnimation type="reveal" animation="zoomFromDeep">
             <HeroButton >
-              <RedButton $variant="default" fullWidth >Quero trasformar minhas aulas!</RedButton>
+              <RedButton $variant="default" fullWidth >Quero transformar minhas aulas!</RedButton>
 
-              <BlueButton $variant="default" fullWidth >Ver Exemplos de Atividade</BlueButton>
+              <BlueButton $variant="default" fullWidth >Ver exemplos de atividade</BlueButton>
             </HeroButton>
           </MAnimation>
 

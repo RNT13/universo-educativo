@@ -11,7 +11,7 @@ export const RecoverySectionContainer = styled.div`
 
   ${media.tablet} {
     flex-direction: column;
-    gap: ${theme.spacing.md};
+    gap: ${theme.spacing.lg};
   }
 
   .popular {

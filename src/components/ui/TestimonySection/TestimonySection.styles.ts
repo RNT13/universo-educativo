@@ -9,6 +9,10 @@ export const TestimonySectionContainer = styled.div`
   grid-template-columns: ${({ theme }) => theme.grid.adaptive};
   justify-content: center;
   gap: ${theme.spacing.md};
+
+  ${media.tablet} {
+    gap: ${theme.spacing.lg};
+  }
 `
 
 export const TestimonyCard = styled.div`
