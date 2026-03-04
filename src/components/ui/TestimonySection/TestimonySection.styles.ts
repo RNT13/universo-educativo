@@ -31,7 +31,6 @@ export const TestimonyCard = styled.div`
   h3 {
     font-size: ${theme.fontSize.md};
     color: ${pastelTheme.colors.pastelPurple.dark};
-    text-shadow: 0px 0px 1px ${theme.colors.baseBlack.base};
   }
 
   h4 {
@@ -42,7 +41,13 @@ export const TestimonyCard = styled.div`
   &:hover {
     translate: 0px -3px;
     box-shadow: 0px -15px 0 0px ${pastelTheme.colors.pastelYellow.dark};
-    background-color: ${pastelTheme.colors.pastelYellow.base};
+    background-image: linear-gradient(
+      180deg,
+      ${pastelTheme.colors.pastelYellow.soft},
+      ${pastelTheme.colors.pastelYellow.dark},
+      ${pastelTheme.colors.pastelYellow.dark},
+      ${pastelTheme.colors.pastelYellow.dark}
+    );
 
     h2 {
       color: ${pastelTheme.colors.pastelYellow.soft};

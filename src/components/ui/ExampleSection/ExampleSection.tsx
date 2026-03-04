@@ -30,19 +30,19 @@ export default function ExampleSection() {
 
               <ul>
                 <li>
-                  <MinorTextH4><FaRegCheckCircle /> Atividades de alfabetização.</MinorTextH4>
+                  <FaRegCheckCircle /> <MinorTextH4> Atividades de alfabetização.</MinorTextH4>
                 </li>
 
                 <li>
-                  <MinorTextH4><FaRegCheckCircle /> Famílias silabicas.</MinorTextH4>
+                  <FaRegCheckCircle /> <MinorTextH4> Famílias silabicas.</MinorTextH4>
                 </li>
 
                 <li>
-                  <MinorTextH4><FaRegCheckCircle /> Interpretação textual.</MinorTextH4>
+                  <FaRegCheckCircle /> <MinorTextH4> Interpretação textual.</MinorTextH4>
                 </li>
 
                 <li>
-                  <MinorTextH4><FaRegCheckCircle /> E muito mais!</MinorTextH4>
+                  <FaRegCheckCircle /> <MinorTextH4> E muito mais!</MinorTextH4>
                 </li>
               </ul>
 
@@ -63,19 +63,19 @@ export default function ExampleSection() {
 
               <ul>
                 <li>
-                  <MinorTextH4><FaRegCheckCircle />Operações matemáticas.</MinorTextH4>
+                  <FaRegCheckCircle /><MinorTextH4>Operações matemáticas.</MinorTextH4>
                 </li>
 
                 <li>
-                  <MinorTextH4><FaRegCheckCircle />Exercicios de lógica.</MinorTextH4>
+                  <FaRegCheckCircle /><MinorTextH4>Exercicios de lógica.</MinorTextH4>
                 </li>
 
                 <li>
-                  <MinorTextH4><FaRegCheckCircle />Geometria.</MinorTextH4>
+                  <FaRegCheckCircle /><MinorTextH4>Geometria.</MinorTextH4>
                 </li>
 
                 <li>
-                  <MinorTextH4><FaRegCheckCircle />Resolução de Problemas.</MinorTextH4>
+                  <FaRegCheckCircle /><MinorTextH4>Resolução de Problemas.</MinorTextH4>
                 </li>
               </ul>
 

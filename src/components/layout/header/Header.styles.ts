@@ -13,13 +13,18 @@ export const HeaderContent = styled.div`
   gap: ${theme.spacing.md};
   padding: ${theme.spacing.md} ${theme.spacing.lg};
 
-  ${media.mobile} {
+  ${media.tablet} {
     padding: ${theme.spacing.sm};
   }
 `
 
 export const ButtonDiv = styled.div`
   display: flex;
+
+  ${media.tablet} {
+    font-size: ${theme.fontSize.sm};
+    gap: ${theme.spacing.sm};
+  }
 `
 
 export const LogoDiv = styled.div`
@@ -35,6 +40,15 @@ export const LogoDiv = styled.div`
     font-size: ${theme.fontSize['2xl']};
     color: ${pastelTheme.colors.pastelRed.dark};
     ${continuousAnimations.rocketLaunchLoop}
+  }
+
+  ${media.tablet} {
+    h1 {
+      font-size: ${theme.fontSize.lg};
+    }
+    svg {
+      font-size: ${theme.fontSize['3xl']};
+    }
   }
 `
 

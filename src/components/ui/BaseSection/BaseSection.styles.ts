@@ -57,7 +57,7 @@ export const BaseSectionContent = styled.div`
     color: ${pastelTheme.colors.pastelPurple.dark};
 
     span {
-      font-size: ${theme.fontSize['2xl']};
+      font-size: ${theme.fontSize.xl};
       font-weight: 600;
       color: ${pastelTheme.colors.pastelRed.base};
     }
@@ -75,9 +75,8 @@ export const BaseSectionContent = styled.div`
     margin-bottom: ${theme.spacing.sm};
 
     ${media.tablet} {
-      font-size: 14px;
+      font-size: ${theme.fontSize.md};
       text-align: center;
-      padding: 0px 12px;
     }
   }
 `

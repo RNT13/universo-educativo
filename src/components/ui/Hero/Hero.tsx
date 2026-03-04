@@ -39,7 +39,7 @@ export default function Hero() {
             </HeroDescription>
           </MAnimation>
 
-          <MAnimation type="reveal" animation="fadeInUp">
+          <MAnimation type="reveal" animation="zoomFromDeep">
             <HeroButton >
               <RedButton $variant="default" fullWidth >Quero trasformar minhas aulas!</RedButton>
 
@@ -47,7 +47,7 @@ export default function Hero() {
             </HeroButton>
           </MAnimation>
 
-          <MAnimation type="reveal" animation="fadeInUp">
+          <MAnimation type="reveal" animation="fadeOutDown">
             <HeroDisclaimer>
               <div>
                 <GoCheckCircleFill />

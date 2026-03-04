@@ -3,7 +3,7 @@ import { MAnimation } from "@/styles/MAnimations";
 import { AiFillThunderbolt, AiOutlineRise } from "react-icons/ai";
 import { CiCircleCheck, CiClock2 } from "react-icons/ci";
 import BaseSection from "../BaseSection/BaseSection";
-import { Book, FinalInfoDiv, FinalSectionCard, FinalSectionCardIcon, FinalSectionCardText, FinalSectionContainer, FinalSectionContent, Target } from "./FinalSection.styles";
+import { Book, FinalInfoDiv, FinalSectionCard, FinalSectionCardIcon, FinalSectionCardText, FinalSectionContainer, FinalSectionContent, Target, ThunterSection } from "./FinalSection.styles";
 
 export default function FinalSection() {
   return (
@@ -66,12 +66,16 @@ export default function FinalSection() {
         </FinalSectionContent>
 
         <FinalInfoDiv>
-          <RedButton $variant="default">Economizar Tempo Agora!</RedButton>
+          <MAnimation type="reveal" animation="zoomFromDeep" center>
+            <RedButton $variant="default" size="lg" leftIcon={<CiClock2 />}>Economizar Tempo Agora!</RedButton>
+          </MAnimation>
 
-          <div>
-            <AiFillThunderbolt />
-            <h3>Mais de 500 professores já economizaram tempo com nosso material</h3>
-          </div>
+          <MAnimation type="reveal" animation="zoomFromDeep" center>
+            <ThunterSection>
+              <AiFillThunderbolt />
+              <h3>Mais de 500 professores já economizaram tempo com nosso material</h3>
+            </ThunterSection>
+          </MAnimation>
         </FinalInfoDiv>
 
 

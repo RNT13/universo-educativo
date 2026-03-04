@@ -23,45 +23,57 @@ export const FinalInfoDiv = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+
   gap: ${theme.spacing.lg};
 
   button {
     font-size: ${theme.fontSize.xl};
     border-radius: ${theme.radius.lg};
     padding: ${theme.spacing.sm} ${theme.spacing.lg};
-  }
-
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: ${theme.spacing.md};
-    background-color: ${pastelTheme.colors.pastelBlue.dark};
-    border-radius: ${theme.radius.lg};
-    padding: ${theme.spacing.sm} ${theme.spacing.lg};
-    ${continuousAnimations.InfinityGlow}
 
     svg {
-      width: 50px;
-      height: 50px;
-      color: ${theme.colors.baseYellow.base};
-      ${continuousAnimations.lightningStrikeLoop}
-
-      ${media.tablet} {
-        width: 80px;
-        height: 80px;
-      }
-    }
-
-    h3 {
-      color: ${theme.colors.baseYellow.base};
+      color: ${pastelTheme.colors.pastelRed.soft};
+      stroke-width: 1.5px;
+      width: 45px;
+      height: 45px;
     }
 
     &:hover {
       svg {
+        color: ${pastelTheme.colors.pastelRed.base};
+        ${continuousAnimations.spin}
       }
     }
+  }
+`
+
+export const ThunterSection = styled.div`
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: ${theme.spacing.md};
+  background-color: ${pastelTheme.colors.pastelBlue.dark};
+  border-radius: ${theme.radius.lg};
+  padding: ${theme.spacing.sm} ${theme.spacing.lg};
+  ${continuousAnimations.InfinityGlow}
+
+  svg {
+    width: 50px;
+    height: 50px;
+    color: ${theme.colors.baseYellow.base};
+    ${continuousAnimations.lightningStrikeLoop}
+
+    ${media.tablet} {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  h3 {
+    color: ${theme.colors.baseYellow.base};
   }
 `
 

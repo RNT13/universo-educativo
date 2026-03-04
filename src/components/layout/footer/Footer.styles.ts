@@ -1,5 +1,5 @@
 import { continuousAnimations } from '@/styles/MAnimations'
-import { pastelTheme, theme } from '@/styles/theme'
+import { media, pastelTheme, theme } from '@/styles/theme'
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
@@ -65,5 +65,11 @@ export const Planet = styled.div`
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+
+  ${media.tablet} {
+    width: 150px;
+    height: 150px;
+    right: -25px;
   }
 `

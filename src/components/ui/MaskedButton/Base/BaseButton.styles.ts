@@ -160,7 +160,7 @@ export const ButtonContent = styled.span<{ $state: ButtonState }>`
    ICON WRAPPER
 ========================= */
 
-export const IconWrapper = styled.div<{ $size?: ButtonSize }>`
+export const IconWrapper = styled.span<{ $size?: ButtonSize }>`
   display: flex;
   align-items: center;
 

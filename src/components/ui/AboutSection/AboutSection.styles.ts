@@ -74,13 +74,13 @@ export const AboutCardBody = styled.div`
     text-align: left;
     ${transitions.fast}
   }
+`
 
-  div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: ${theme.spacing.sm};
-  }
+export const TagDiv = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: ${theme.spacing.sm};
 
   span {
     display: flex;
@@ -90,7 +90,7 @@ export const AboutCardBody = styled.div`
     padding: ${theme.spacing.xs} ${theme.spacing.sm};
 
     border-radius: 999px;
-    font-size: ${theme.fontSize.xs};
+    font-size: ${theme.fontSize.sm};
     font-weight: 500;
 
     width: fit-content;
@@ -98,7 +98,7 @@ export const AboutCardBody = styled.div`
     ${transitions.fast}
 
     svg {
-      font-size: ${theme.fontSize.lg};
+      font-size: ${theme.fontSize.xl};
     }
 
     &:hover {
@@ -107,27 +107,27 @@ export const AboutCardBody = styled.div`
   }
 
   .span-green {
-    border: 2px solid ${pastelTheme.colors.pastelGreen.soft};
-    color: ${pastelTheme.colors.pastelGreen.soft};
-    background-color: ${pastelTheme.colors.pastelGreen.base};
+    border: 2px solid ${pastelTheme.colors.pastelGreen.dark};
+    color: ${pastelTheme.colors.pastelGreen.dark};
+    background-color: ${pastelTheme.colors.pastelGreen.soft};
   }
 
   .span-red {
-    border: 2px solid ${pastelTheme.colors.pastelRed.soft};
-    color: ${pastelTheme.colors.pastelRed.soft};
-    background-color: ${pastelTheme.colors.pastelRed.base};
+    border: 2px solid ${pastelTheme.colors.pastelRed.dark};
+    color: ${pastelTheme.colors.pastelRed.dark};
+    background-color: ${pastelTheme.colors.pastelRed.soft};
   }
 
   .span-yellow {
-    border: 2px solid ${pastelTheme.colors.pastelYellow.soft};
-    color: ${pastelTheme.colors.pastelYellow.soft};
-    background-color: ${pastelTheme.colors.pastelYellow.base};
+    border: 2px solid ${pastelTheme.colors.pastelYellow.dark};
+    color: ${pastelTheme.colors.pastelYellow.dark};
+    background-color: ${pastelTheme.colors.pastelYellow.soft};
   }
 
   .span-blue {
-    border: 2px solid ${pastelTheme.colors.pastelBlue.soft};
-    color: ${pastelTheme.colors.pastelBlue.soft};
-    background-color: ${pastelTheme.colors.pastelBlue.base};
+    border: 2px solid ${pastelTheme.colors.pastelBlue.dark};
+    color: ${pastelTheme.colors.pastelBlue.dark};
+    background-color: ${pastelTheme.colors.pastelBlue.soft};
   }
 
   ${media.tablet} {

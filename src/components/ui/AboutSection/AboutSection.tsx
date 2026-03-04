@@ -5,7 +5,7 @@ import { IoMdPrint } from "react-icons/io";
 import { LuPalette } from "react-icons/lu";
 import { MdOutlineFileDownload } from "react-icons/md";
 import BaseSection from "../BaseSection/BaseSection";
-import { AboutCard, AboutCardBody, AboutCardHeader, AboutContainer, Rainbow } from "./AboutSection.styles";
+import { AboutCard, AboutCardBody, AboutCardHeader, AboutContainer, Rainbow, TagDiv } from "./AboutSection.styles";
 
 export default function AboutSection() {
   return (
@@ -29,7 +29,7 @@ export default function AboutSection() {
             <AboutCardBody>
               <MinorTextH4>Alfabetização Divertida</MinorTextH4>
 
-              <div>
+              <TagDiv>
                 <span className="span-green">
                   <MdOutlineFileDownload /> Exercícios com letras e números coloridos
                 </span>
@@ -41,7 +41,7 @@ export default function AboutSection() {
                 <span className="span-blue">
                   <IoMdPrint /> Jogos de consciência fonológica
                 </span>
-              </div>
+              </TagDiv>
             </AboutCardBody>
           </AboutCard>
         </MAnimation>
@@ -55,7 +55,7 @@ export default function AboutSection() {
             <AboutCardBody>
               <MinorTextH4>Matemática com Jogos</MinorTextH4>
 
-              <div>
+              <TagDiv>
                 <span className="span-yellow">
                   <LuPalette /> Jogos de contagem e sequência numérica
                 </span>
@@ -67,7 +67,7 @@ export default function AboutSection() {
                 <span className="span-green">
                   <IoMdPrint /> Desafios lúdicos de adição e subtração
                 </span>
-              </div>
+              </TagDiv>
             </AboutCardBody>
           </AboutCard>
         </MAnimation>
@@ -81,7 +81,7 @@ export default function AboutSection() {
             <AboutCardBody>
               <MinorTextH4>Ciências e Natureza</MinorTextH4>
 
-              <div>
+              <TagDiv>
                 <span className="span-red">
                   <LuPalette /> Experimentos simples e ilustrados
                 </span>
@@ -93,7 +93,7 @@ export default function AboutSection() {
                 <span className="span-blue">
                   <IoMdPrint /> Sequências didáticas temáticas
                 </span>
-              </div>
+              </TagDiv>
             </AboutCardBody>
           </AboutCard>
         </MAnimation>
@@ -107,7 +107,7 @@ export default function AboutSection() {
             <AboutCardBody>
               <MinorTextH4>Economia de Tempo</MinorTextH4>
 
-              <div>
+              <TagDiv>
                 <span className="span-blue">
                   <IoMdPrint /> Planejamento semanal estruturado
                 </span>
@@ -119,7 +119,7 @@ export default function AboutSection() {
                 <span className="span-green">
                   <LuPalette /> Atividades organizadas por tema
                 </span>
-              </div>
+              </TagDiv>
             </AboutCardBody>
           </AboutCard>
         </MAnimation>

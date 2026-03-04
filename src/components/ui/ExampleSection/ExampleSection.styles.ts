@@ -96,23 +96,24 @@ export const ExampleCardBody = styled.div<SectionVariantsProps>`
     li {
       display: flex;
       align-items: center;
-      gap: ${theme.spacing.md};
-      font-weight: 600;
+      gap: ${theme.spacing.xs};
       color: ${props => sectionColors[props.$variant].border};
 
       h4 {
-        font-weight: 600;
+        font-size: ${theme.fontSize.md};
         color: ${props => sectionColors[props.$variant].border};
         margin-bottom: 0px;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
       }
     }
   }
 
   ${media.tablet} {
     width: 100%;
-    h4 {
-      font-size: 0.8rem;
-    }
   }
 `
 
