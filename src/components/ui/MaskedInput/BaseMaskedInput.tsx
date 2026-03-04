@@ -31,9 +31,12 @@ type Variant =
   | "file"
   | "search";
 
+type InputValue = string | string[] | File | File[] | undefined;
+
 type BaseMaskedInputProps = {
-  value: any;
-  onChange: (value: any) => void;
+
+  value: InputValue;
+  onChange: (value: InputValue) => void;
 
   error?: string;
   touched?: boolean;
@@ -102,6 +105,8 @@ export const BaseMaskedInput = ({
     placeholder,
     className: `${className ?? ""} ${hasError ? "error" : ""}`,
   };
+
+  const stringValue = typeof value === "string" ? value : "";
 
   /* ============================================================
    * CLOUDINARY
@@ -174,7 +179,7 @@ export const BaseMaskedInput = ({
       <input
         {...commonProps}
         type={type}
-        value={value ?? ""}
+        value={stringValue}
         onChange={(e) => onChange(e.target.value)}
       />
     ),
@@ -193,7 +198,7 @@ export const BaseMaskedInput = ({
         <input
           {...commonProps}
           type={showPassword ? "text" : "password"}
-          value={value ?? ""}
+          value={stringValue}
           onChange={(e) => onChange(e.target.value)}
         />
         <PasswordToggle onClick={() => setShowPassword((s) => !s)}>
@@ -205,7 +210,7 @@ export const BaseMaskedInput = ({
     textarea: (
       <textarea
         {...commonProps}
-        value={value ?? ""}
+        value={stringValue}
         onChange={(e) => onChange(e.target.value)}
       />
     ),
@@ -213,7 +218,7 @@ export const BaseMaskedInput = ({
     select: (
       <select
         {...commonProps}
-        value={value ?? ""}
+        value={stringValue}
         onChange={(e) => onChange(e.target.value)}
       >
         {children}
@@ -253,7 +258,7 @@ export const BaseMaskedInput = ({
           {...commonProps}
           onClick={onClick}
           type="search"
-          value={value ?? ""}
+          value={stringValue}
           placeholder={placeholder ?? "Pesquisar..."}
           onChange={(e) => onChange(e.target.value)}
         />
@@ -269,4 +274,3 @@ export const BaseMaskedInput = ({
   );
 };
 
-      
