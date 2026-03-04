@@ -51,25 +51,25 @@ export const BaseSectionContent = styled.div`
   gap: ${theme.spacing.md};
 
   h2 {
-    font-size: ${theme.fontSize.xLarge};
+    font-size: ${theme.fontSize['2xl']};
     font-weight: 600;
     text-shadow: 0px 0px 1px ${theme.colors.baseBlack.base};
     color: ${pastelTheme.colors.pastelPurple.dark};
 
     span {
-      font-size: ${theme.fontSize.xLarge};
+      font-size: ${theme.fontSize['2xl']};
       font-weight: 600;
       color: ${pastelTheme.colors.pastelRed.base};
     }
 
     ${media.tablet} {
-      font-size: ${theme.fontSize.large};
+      font-size: ${theme.fontSize.lg};
       text-align: center;
     }
   }
 
   h4 {
-    font-size: ${theme.fontSize.medium};
+    font-size: ${theme.fontSize.md};
     font-weight: 600;
     color: ${pastelTheme.colors.pastelBlue.dark};
     margin-bottom: ${theme.spacing.sm};

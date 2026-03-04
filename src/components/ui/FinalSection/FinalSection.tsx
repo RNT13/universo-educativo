@@ -66,7 +66,7 @@ export default function FinalSection() {
         </FinalSectionContent>
 
         <FinalInfoDiv>
-          <RedButton variant="default">Economizar Tempo Agora!</RedButton>
+          <RedButton $variant="default">Economizar Tempo Agora!</RedButton>
 
           <div>
             <AiFillThunderbolt />

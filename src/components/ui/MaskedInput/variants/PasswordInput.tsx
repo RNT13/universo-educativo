@@ -5,7 +5,7 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import { ErrorDiv, InputLabel, MaskedInputContainer, PasswordToggle } from '../MaskedInput.styles'
 import { InputVariantMap } from '../MaskedInput.types'
 
-type Props = { variant: 'password' } & InputVariantMap['password']
+type Props = { $variant: 'password' } & InputVariantMap['password']
 
 export function PasswordInput(props: Props) {
   const [show, setShow] = useState(false)

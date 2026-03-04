@@ -75,5 +75,5 @@ export type InputVariantMap = {
 /* ================= UNION AUTOMÁTICA ================= */
 
 export type InputProps = {
-  [K in keyof InputVariantMap]: { variant: K } & InputVariantMap[K]
+  [K in keyof InputVariantMap]: { $variant: K } & InputVariantMap[K]
 }[keyof InputVariantMap]

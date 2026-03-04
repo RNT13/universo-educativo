@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 import { ErrorDiv, FileTrigger, InputLabel, MaskedInputContainer, PreviewImageDiv } from '../MaskedInput.styles'
 import { InputVariantMap } from '../MaskedInput.types'
 
-type Props = { variant: 'file' } & InputVariantMap['file']
+type Props = { $variant: 'file' } & InputVariantMap['file']
 
 export function FileInput(props: Props) {
   const inputRef = useRef<HTMLInputElement | null>(null)

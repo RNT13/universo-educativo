@@ -9,7 +9,7 @@ import {
 } from '../MaskedInput.styles'
 import { InputVariantMap } from '../MaskedInput.types'
 
-type Props = { variant: 'currency' } & InputVariantMap['currency']
+type Props = { $variant: 'currency' } & InputVariantMap['currency']
 
 export function CurrencyInput(props: Props) {
   const hasError = props.touched && Boolean(props.error)

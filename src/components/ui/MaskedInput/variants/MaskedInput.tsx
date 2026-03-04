@@ -4,7 +4,7 @@ import { IMaskInput } from 'react-imask'
 import { ErrorDiv, InputLabel, MaskedInputContainer } from '../MaskedInput.styles'
 import { InputVariantMap } from '../MaskedInput.types'
 
-type Props = { variant: 'masked' } & InputVariantMap['masked']
+type Props = { $variant: 'masked' } & InputVariantMap['masked']
 
 export function MaskedInput(props: Props) {
   const hasError = props.touched && props.error

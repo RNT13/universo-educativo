@@ -2,7 +2,7 @@
 
 // 🎨 GLOBAL STYLES - Estilos globais com Styled Components
 
-import { MButton } from '@/components/ui/MaskedButton/MaskedButton';
+import DefaultButton from '@/components/ui/MaskedButton/variants/Default/DefaultButton';
 import styled, { createGlobalStyle } from 'styled-components';
 import { continuousAnimations, transitions } from './MAnimations';
 import { media, pastelTheme, theme, themeConfig } from './theme';
@@ -55,13 +55,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export const RedButton = styled(MButton)`
+export const RedButton = styled(DefaultButton)`
   background-color: ${pastelTheme.colors.pastelRed.base};
   color: ${pastelTheme.colors.pastelRed.soft};
   border: 2px solid ${pastelTheme.colors.pastelRed.base};
   border-radius: ${theme.radius.lg};
   font-size: ${theme.fontSize.sm};
-  padding: ${theme.spacing.md} ${theme.spacing.sm};
+  padding: ${theme.spacing.md} ${theme.spacing.lg};
 
   &:hover {
     background-color: ${pastelTheme.colors.pastelRed.soft};
@@ -72,13 +72,13 @@ export const RedButton = styled(MButton)`
   ${continuousAnimations.shineInfinite}
 `
 
-export const BlueButton = styled(MButton)`
+export const BlueButton = styled(DefaultButton)`
   background-color: ${pastelTheme.colors.pastelBlue.base};
   color: ${pastelTheme.colors.pastelBlue.soft};
   border: 2px solid ${pastelTheme.colors.pastelBlue.base};
   border-radius: ${theme.radius.lg};
   font-size: ${theme.fontSize.sm};
-  padding: ${theme.spacing.md} ${theme.spacing.sm};
+  padding: ${theme.spacing.md} ${theme.spacing.lg};
   ${continuousAnimations.shineInfinite}
 
   &:hover {
@@ -89,13 +89,13 @@ export const BlueButton = styled(MButton)`
   }
 `
 
-export const YellowButton = styled(MButton)`
+export const YellowButton = styled(DefaultButton)`
   background-color: ${pastelTheme.colors.pastelYellow.base};
   color: ${pastelTheme.colors.pastelYellow.soft};
   border: 2px solid ${pastelTheme.colors.pastelYellow.base};
   border-radius: ${theme.radius.lg};
   font-size: ${theme.fontSize.sm};
-  padding: ${theme.spacing.md} ${theme.spacing.sm};
+  padding: ${theme.spacing.md} ${theme.spacing.lg};
   ${continuousAnimations.goldBorderPremium}
 
   &:hover {
@@ -106,13 +106,13 @@ export const YellowButton = styled(MButton)`
   }
 `
 
-export const GreenButton = styled(MButton)`
+export const GreenButton = styled(DefaultButton)`
   background-color: ${pastelTheme.colors.pastelGreen.base};
   color: ${pastelTheme.colors.pastelGreen.soft};
   border: 2px solid ${pastelTheme.colors.pastelGreen.base};
   border-radius: ${theme.radius.lg};
   font-size: ${theme.fontSize.sm};
-  padding: ${theme.spacing.md} ${theme.spacing.sm};
+  padding: ${theme.spacing.md} ${theme.spacing.lg};
   ${continuousAnimations.shineInfinite}
 
   &:hover {

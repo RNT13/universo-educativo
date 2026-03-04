@@ -43,10 +43,12 @@ export const FooterButtons = styled.div`
     border: none;
     ${continuousAnimations.shineInfinite}
     ${continuousAnimations.float}
-  }
 
-  svg {
-    color: ${pastelTheme.colors.pastelBlue.soft};
+    svg {
+      width: 50px;
+      height: 50px;
+      color: ${pastelTheme.colors.pastelBlue.soft};
+    }
   }
 `
 

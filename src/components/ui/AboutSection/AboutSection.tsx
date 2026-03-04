@@ -23,7 +23,7 @@ export default function AboutSection() {
         <MAnimation type="reveal" animation="fadeInUp">
           <AboutCard>
             <AboutCardHeader>
-              <Image src="/img-01.jpg" alt="Alfabetizacao Divertida" fill />
+              <Image src="/img-01.jpg" alt="Alfabetizacao Divertida" fill sizes="500px" priority />
             </AboutCardHeader>
 
             <AboutCardBody>
@@ -49,7 +49,7 @@ export default function AboutSection() {
         <MAnimation type="reveal" animation="fadeInUp">
           <AboutCard>
             <AboutCardHeader>
-              <Image src="/img-02.jpg" alt="Alfabetizacao Divertida" fill />
+              <Image src="/img-02.jpg" alt="Alfabetizacao Divertida" fill sizes="500px" priority />
             </AboutCardHeader>
 
             <AboutCardBody>
@@ -75,7 +75,7 @@ export default function AboutSection() {
         <MAnimation type="reveal" animation="fadeInUp">
           <AboutCard>
             <AboutCardHeader>
-              <Image src="/img-03.jpg" alt="Alfabetizacao Divertida" fill />
+              <Image src="/img-03.jpg" alt="Alfabetizacao Divertida" fill sizes="500px" priority />
             </AboutCardHeader>
 
             <AboutCardBody>
@@ -101,7 +101,7 @@ export default function AboutSection() {
         <MAnimation type="reveal" animation="fadeInUp">
           <AboutCard>
             <AboutCardHeader>
-              <Image src="/img-04.webp" alt="Alfabetizacao Divertida" fill />
+              <Image src="/img-04.webp" alt="Alfabetizacao Divertida" fill sizes="500px" priority />
             </AboutCardHeader>
 
             <AboutCardBody>

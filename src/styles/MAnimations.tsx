@@ -22,16 +22,18 @@ const rocketTrajectory = keyframes`
   }
 
   /* Entrada suave até o centro */
-  30% {
+  10% {
     transform: translate(0, 0) scale(1) rotate(0deg);
     opacity: 1;
   }
 
   /* Fica no centro respirando levemente */
-  38% { transform: translate(-10px, -5px) rotate(-5deg); }
-  46% { transform: translate(-10px, -3px) rotate(-5deg); }
-  54% { transform: translate(4px, -4px) rotate(-5deg); }
-  62% { transform: translate(4px, -1px) rotate(-5deg); }
+  15% { transform: translate(-8px, -4px) rotate(-5deg); }
+  25% { transform: translate(6px, 3px) rotate(-5deg); }
+  36% { transform: translate(-8px, -4px) rotate(-5deg); }
+  45% { transform: translate(6px, 3px) rotate(-5deg); }
+  55% { transform: translate(-4px, -2px) rotate(-5deg); }
+  60% { transform: translate(4px, 2px) rotate(-5deg); }
 
   /* Volta para posição neutra antes da ignição */
   70% {
@@ -40,12 +42,12 @@ const rocketTrajectory = keyframes`
 
   /* Aceleração progressiva */
   80% {
-    transform: translate(150px, -150px) scale(1.1) rotate(8deg);
+    transform: translate(150px, -150px) scale(1.5) rotate(8deg);
   }
 
   /* Disparo final */
   100% {
-    transform: translate(100px, -100px) scale(1.25) rotate(18deg);
+    transform: translate(100px, -100px) scale(2) rotate(18deg);
     opacity: 1;
   }
 `;

@@ -4,7 +4,7 @@ import { FiSearch } from 'react-icons/fi'
 import { ErrorDiv, InputLabel, MaskedInputContainer, SearchIcon } from '../MaskedInput.styles'
 import { InputVariantMap } from '../MaskedInput.types'
 
-type Props = { variant: 'search' } & InputVariantMap['search']
+type Props = { $variant: 'search' } & InputVariantMap['search']
 
 export function SearchInput(props: Props) {
   const hasError = props.touched && props.error

@@ -3,7 +3,7 @@
 import { ErrorDiv, InputLabel, MaskedInputContainer } from '../MaskedInput.styles'
 import { InputVariantMap } from '../MaskedInput.types'
 
-type Props = { variant: 'default' } & InputVariantMap['default']
+type Props = { $variant: 'default' } & InputVariantMap['default']
 
 export function TextInput(props: Props) {
   const hasError = props.touched && props.error

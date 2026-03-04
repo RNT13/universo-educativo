@@ -1,3 +1,4 @@
+
 import { GreenButton, RedButton, YellowButton } from "@/styles/globalStyles";
 import { MAnimation } from "@/styles/MAnimations";
 import { FaCheck } from "react-icons/fa";
@@ -42,7 +43,7 @@ export default function RecoverySection() {
             </RecoverySectionCardBody>
 
             <RecoverySectionCardFooter $variant="red">
-              <RedButton fullWidth variant="default">Comprar Agora!</RedButton>
+              <RedButton fullWidth $variant="default" >Comprar Agora!</RedButton>
             </RecoverySectionCardFooter>
 
           </RecoverySectionCards>
@@ -78,7 +79,7 @@ export default function RecoverySection() {
             </RecoverySectionCardBody>
 
             <RecoverySectionCardFooter $variant="yellow">
-              <YellowButton fullWidth variant="default">Comprar Agora!</YellowButton>
+              <YellowButton fullWidth $variant="default" >Comprar Agora!</YellowButton>
             </RecoverySectionCardFooter>
 
           </RecoverySectionCards>
@@ -119,7 +120,7 @@ export default function RecoverySection() {
             </RecoverySectionCardBody>
 
             <RecoverySectionCardFooter $variant="green">
-              <GreenButton fullWidth variant="default">Comprar Agora!</GreenButton>
+              <GreenButton fullWidth $variant="default" >Comprar Agora!</GreenButton>
             </RecoverySectionCardFooter>
 
           </RecoverySectionCards>

@@ -17,9 +17,11 @@ export default function Footer() {
   return (
     <FooterContainer>
       <FooterContent>
-        <Planet >
-          <Image src="/planet.png" alt="planet" fill />
-        </Planet>
+        <MAnimation type="reveal" animation="blurIn">
+          <Planet >
+            <Image src="/planet.png" alt="planet" fill sizes="500px" priority />
+          </Planet>
+        </MAnimation>
 
         <MAnimation type="reveal" animation="fadeInUp">
           <TitleH2>Universo Educativo</TitleH2>
@@ -28,11 +30,11 @@ export default function Footer() {
 
         <FooterButtons>
           <MAnimation type="reveal" animation="fadeInUp">
-            <MButton variant="outline" shapes="circle" href="instagram" target="_blank" rel="noopener noreferrer" leftIcon={<FaInstagram />} />
+            <MButton $variant="outline" shapes="circle" size="lg" href="instagram" target="_blank" rel="noopener noreferrer" leftIcon={<FaInstagram />} />
           </MAnimation>
 
           <MAnimation type="reveal" animation="fadeInUp">
-            <MButton variant="outline" shapes="circle" href="whatsapp" target="_blank" rel="noopener noreferrer" leftIcon={<FaWhatsapp />} />
+            <MButton $variant="outline" shapes="circle" size="lg" href="whatsapp" target="_blank" rel="noopener noreferrer" leftIcon={<FaWhatsapp />} />
           </MAnimation>
         </FooterButtons>
 

@@ -41,9 +41,9 @@ export default function Hero() {
 
           <MAnimation type="reveal" animation="fadeInUp">
             <HeroButton >
-              <RedButton variant="default" fullWidth >Quero trasformar minhas aulas!</RedButton>
+              <RedButton $variant="default" fullWidth >Quero trasformar minhas aulas!</RedButton>
 
-              <BlueButton variant="default" fullWidth >Ver Exemplos de Atividade</BlueButton>
+              <BlueButton $variant="default" fullWidth >Ver Exemplos de Atividade</BlueButton>
             </HeroButton>
           </MAnimation>
 

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { ErrorDiv, InputLabel, MaskedInputContainer, SelectDropdown, SelectOption, SelectTrigger } from '../MaskedInput.styles'
 import { InputVariantMap } from '../MaskedInput.types'
 
-type props = { variant: 'select' } & InputVariantMap['select']
+type props = { $variant: 'select' } & InputVariantMap['select']
 
 export function SelectInput(props: props) {
   const [open, setOpen] = useState(false)

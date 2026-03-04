@@ -22,7 +22,7 @@ export default function ExampleSection() {
 
           <ExampleCard $variant="blue">
             <ExampleCardImg $variant="blue">
-              <Image className="rotateRight" src="/img-05.jpg" alt="Placeholder" fill />
+              <Image className="rotateRight" src="/img-05.jpg" alt="Placeholder" fill sizes="500px" priority />
             </ExampleCardImg>
 
             <ExampleCardBody $variant="blue">
@@ -55,7 +55,7 @@ export default function ExampleSection() {
           <ExampleCard $variant="red" className="reverseColumn">
 
             <ExampleCardImg $variant="red">
-              <Image className="rotateLeft" src="/img-06.jpg" alt="Placeholder" fill />
+              <Image className="rotateLeft" src="/img-06.jpg" alt="Placeholder" fill sizes="500px" priority />
             </ExampleCardImg>
 
             <ExampleCardBody $variant="red">
@@ -88,7 +88,7 @@ export default function ExampleSection() {
 
           <ExampleCard $variant="green">
             <ExampleCardImg $variant="green">
-              <Image className="rotateRight" src="/img-08.jpg" alt="Placeholder" fill />
+              <Image className="rotateRight" src="/img-08.jpg" alt="Placeholder" fill sizes="500px" priority />
             </ExampleCardImg>
 
             <ExampleCardBody $variant="green">

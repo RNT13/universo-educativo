@@ -16,7 +16,7 @@ export default function Header() {
 
         <ButtonDiv>
           <MAnimation type="reveal" animation="fadeInUp">
-            <RedButton variant="default">Economizar Tempo Agora!</RedButton>
+            <RedButton $variant="default" >Economizar Tempo Agora!</RedButton>
           </MAnimation>
         </ButtonDiv>
       </HeaderContent>

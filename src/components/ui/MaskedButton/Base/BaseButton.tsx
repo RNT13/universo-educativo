@@ -39,14 +39,14 @@ export const BaseButton = forwardRef<HTMLButtonElement | HTMLAnchorElement, Base
       <ButtonContent $state={state}>
         {state === 'loading' ? (
           <>
-            {<IconWrapper>{<VscLoading />}</IconWrapper>}
+            {<IconWrapper $size={size}>{<VscLoading />}</IconWrapper>}
             <span>Loading...</span>
           </>
         ) : (
           <>
-            {leftIcon && <IconWrapper>{leftIcon}</IconWrapper>}
-            {<span>{children}</span>}
-            {rightIcon && <IconWrapper>{rightIcon}</IconWrapper>}
+            {leftIcon && <IconWrapper $size={size}>{leftIcon}</IconWrapper>}
+            <span className="btn-text">{children}</span>
+            {rightIcon && <IconWrapper $size={size}>{rightIcon}</IconWrapper>}
           </>
         )}
         {label && <LabelDiv>{label}</LabelDiv>}
