@@ -106,7 +106,7 @@ export const TestimonyCardAvatar = styled.div`
   border-radius: 50%;
   overflow: hidden;
   background-image: linear-gradient(180deg, ${pastelTheme.colors.pastelBlue.base}, ${pastelTheme.colors.pastelRed.base});
-  ${continuousAnimations.InfinityGlow};
+  ${continuousAnimations.InfinityGlowGold};
 
   span {
     width: 100%;
