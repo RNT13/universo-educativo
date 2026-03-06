@@ -108,7 +108,7 @@ export default function ExampleSection() {
                 </li>
 
                 <li>
-                  <FaRegCheckCircle /><MinorTextH4>Experimentos práticas.</MinorTextH4>
+                  <FaRegCheckCircle /><MinorTextH4>Experimentos práticos.</MinorTextH4>
                 </li>
               </ul>
 
