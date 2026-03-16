@@ -1,13 +1,37 @@
 
+import { useCreateCheckoutMutation } from "@/redux/slices/apiSlice";
 import { GreenButton, RedButton, YellowButton } from "@/styles/globalStyles";
 import { MAnimation } from "@/styles/MAnimations";
+import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import BaseSection from "../BaseSection/BaseSection";
 import { RecoverySectionCardBody, RecoverySectionCardFooter, RecoverySectionCardHeader, RecoverySectionCards, RecoverySectionContainer } from "./RecoverySection.styles";
 
+
 export default function RecoverySection() {
+  const [createCheckout] = useCreateCheckoutMutation()
+  const [loadingProduct, setLoadingProduct] = useState<number | null>(null)
+
+  const handleCheckout = async (productId: number) => {
+
+    setLoadingProduct(productId)
+
+    try {
+      const res = await createCheckout({
+        product_id: productId
+      }).unwrap()
+
+      window.location.href = res.checkout_url
+    }
+    finally {
+      setLoadingProduct(null)
+    }
+  }
+
+
   return (
     <BaseSection
+      id="recovery"
       bgType="solid"
       title1="Recupere Seu"
       titleHighlight="Tempo e Energia"
@@ -43,7 +67,7 @@ export default function RecoverySection() {
             </RecoverySectionCardBody>
 
             <RecoverySectionCardFooter $variant="red">
-              <RedButton fullWidth $variant="default" >Comprar Agora!</RedButton>
+              <RedButton fullWidth $variant="default" state={loadingProduct === 12 ? "loading" : "default"} onClick={() => handleCheckout(12)}>Comprar Agora!</RedButton>
             </RecoverySectionCardFooter>
 
           </RecoverySectionCards>
@@ -79,7 +103,7 @@ export default function RecoverySection() {
             </RecoverySectionCardBody>
 
             <RecoverySectionCardFooter $variant="yellow">
-              <YellowButton fullWidth $variant="default" >Comprar Agora!</YellowButton>
+              <YellowButton fullWidth $variant="default" state={loadingProduct === 13 ? "loading" : "default"} onClick={() => handleCheckout(13)}>Comprar Agora!</YellowButton>
             </RecoverySectionCardFooter>
 
           </RecoverySectionCards>
@@ -120,7 +144,7 @@ export default function RecoverySection() {
             </RecoverySectionCardBody>
 
             <RecoverySectionCardFooter $variant="green">
-              <GreenButton fullWidth $variant="default" >Comprar Agora!</GreenButton>
+              <GreenButton fullWidth $variant="default" state={loadingProduct === 14 ? "loading" : "default"} onClick={() => handleCheckout(14)}>Comprar Agora!</GreenButton>
             </RecoverySectionCardFooter>
 
           </RecoverySectionCards>

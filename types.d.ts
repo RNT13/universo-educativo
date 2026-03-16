@@ -146,4 +146,12 @@ declare global {
     success: boolean
     error: string
   }
+
+  interface Product {
+    id: number
+    name: string
+    description: string
+    price: number
+    file_url: string
+  }
 }

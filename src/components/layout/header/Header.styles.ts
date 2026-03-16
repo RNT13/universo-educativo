@@ -2,9 +2,14 @@ import { continuousAnimations } from '@/styles/MAnimations'
 import { media, pastelTheme, theme } from '@/styles/theme'
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled.header<{ $onTop: boolean; $onSection: boolean }>`
+  position: ${({ $onSection }) => ($onSection ? 'none' : 'sticky')};
+  top: 0;
+  z-index: 2;
   width: 100%;
   background-color: ${pastelTheme.colors.pastelYellow.soft};
+
+  border-bottom: ${({ $onTop }) => ($onTop ? `3px solid ${pastelTheme.colors.pastelRed.dark}` : `none`)};
 `
 
 export const HeaderContent = styled.div`
@@ -20,6 +25,10 @@ export const HeaderContent = styled.div`
 
 export const ButtonDiv = styled.div`
   display: flex;
+
+  a {
+    text-decoration: none;
+  }
 
   ${media.tablet} {
     button {

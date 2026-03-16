@@ -19,12 +19,13 @@ type BaseSectionProps = {
   $bgVariant2?: BgColor
 }
 
-export const BaseSectionContainer = styled.div<BaseSectionProps>`
+export const BaseSectionContainer = styled.section<BaseSectionProps>`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: ${theme.spacing.lg} 0;
+  scroll-margin-top: 80px;
 
   ${({ $bgType = 'solid', $bgVariant, $bgVariant2 }) => {
     if ($bgType === 'gradient') {

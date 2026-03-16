@@ -136,6 +136,10 @@ export const HeroButton = styled.div`
   align-items: center;
   gap: ${theme.spacing.md};
 
+  a {
+    text-decoration: none;
+  }
+
   ${media.tablet} {
     flex-direction: column;
     align-items: center;

@@ -43,9 +43,9 @@ export default function Hero() {
 
           <MAnimation type="reveal" animation="zoomFromDeep">
             <HeroButton >
-              <RedButton $variant="default" fullWidth >Quero transformar minhas aulas!</RedButton>
+              <RedButton $variant="default" fullWidth href="#recovery" >Quero transformar minhas aulas!</RedButton>
 
-              <BlueButton $variant="default" fullWidth >Ver exemplos de atividade</BlueButton>
+              <BlueButton $variant="default" fullWidth href="#about" >Ver exemplos de atividade</BlueButton>
             </HeroButton>
           </MAnimation>
 

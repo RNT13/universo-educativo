@@ -6,6 +6,7 @@ import { AboutCard, AboutCardContent, AboutContainer, AboutContent, Rainbow } fr
 export default function AboutSection() {
   return (
     <BaseSection
+      id="about"
       bgType="solid"
       title1="Veja exemplos"
       titleHighlight="reais"
